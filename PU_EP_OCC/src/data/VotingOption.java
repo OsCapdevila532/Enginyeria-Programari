@@ -1,6 +1,5 @@
 package data;
 
-import data.exceptions.NullNifException;
 import data.exceptions.NullVotingOptionException;
 /**
  * Essential data classes
