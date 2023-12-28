@@ -1,0 +1,17 @@
+package evoting;
+
+public enum VotingKioskState {
+    STARTUP,
+    EVOTESELECTED,
+    DOCUMSELECTED,
+    SUPPORTVERIFIED,
+    IDCONFIRMED,
+    NIFCANVOTE,
+    VOTINGOPTIONS,
+    VOPTINFO,
+    VOTESELECTED,
+    VOTECONFIRMED,
+    VOTESENT,
+    SESSIONFIN,
+
+}
