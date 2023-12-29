@@ -17,7 +17,7 @@ final public class VotingOption {
     public void checkVotingOption(String option) throws NullVotingOptionException {
         if (option == null) throw new NullVotingOptionException("L'opcio de vot seleccionada es null");
     }
-    public String getParty () { return party; }
+    public String getParty () { return this.party; }
     @Override
     public boolean equals (Object o) {
         if (this == o) return true;

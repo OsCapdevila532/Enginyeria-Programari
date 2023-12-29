@@ -26,7 +26,7 @@ public class VotingOptionTest {
 
     @Test
     public void getVotingOptionFailTest(){
-        assertThrows(NullVotingOptionException.class, () -> new VotingOption( null));
+        assertThrows(NullVotingOptionException.class, () -> new VotingOption(null));
     }
 }
 

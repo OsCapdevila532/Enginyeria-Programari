@@ -3,18 +3,17 @@ package dobles;
 import data.VotingOption;
 import services.Scrutiny;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class ScrutinyClass implements Scrutiny{
-    Map<VotingOption,Integer> partiesvotes;
+    Map<VotingOption,Integer> partiesvotes = new HashMap<>();;
     int totalVotes;
     int totalNulls;
     int totalBlanks;
 
-    public ScrutinyClass(int totalNulls, int totalBlanks)  {
-        this.totalNulls = totalNulls;
-        this.totalBlanks = totalBlanks;
+    public ScrutinyClass()  {
     }
 
     @Override
@@ -57,6 +56,6 @@ public class ScrutinyClass implements Scrutiny{
     @Override
     public void getScrutinyResults() {
         System.out.println("Resultats de la votació:");
-        partiesvotes.forEach((option, votes) -> System.out.println(option + ": " + votes));
+        partiesvotes.forEach((option, votes) -> System.out.println(option.getParty() + ": " + votes));
     }
 }
